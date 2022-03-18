@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loan Calculator</title>
+  </head>
+
+  <body onload=" setInitialValue()" >
+        
+         <div class="top">
+          <h1>Calculate Home Loan EMI</h1> 
+           
+                  <div class="level">Loan Amount</div>     
+                            <input class="input" id="amount" type="number" value="500000" onkeyup="ComputeResults()"/>
+                            
+                  <div class="level">Interest Rate (%P.A.)</div>
+                            <input class="input" id="interest" type="number" value="6.5" onkeyup="ComputeResults()" />
+                        
+                  <div class="level">Tenure(Years)</div>                          
+                            <input class="input" id="years" type="number" value="5" onkeyup="ComputeResults()"/> 
+              </div>
+ 
+      <h1 class="title ">Calculated Results</h1>
+
+      <p class="subtitle is-4">Monthly Home Loan EMI</p> 
+      <p id="monthlyPayment" class="title is-1"></p>
+     
+      <p class="subtitle is-4">Interest Amount</p>
+          <p id="totalInterest" class="title is-1"></p>
+
+          <p class="subtitle is-4">Total Amount Payable</p>
+          <p id="totalPayment" class="title is-1"></p>
+          
+          <table id="fetch" border="2" class="table"></table> 
+                
+ </body>
+  <script src="main.js"></script>
+</html>
